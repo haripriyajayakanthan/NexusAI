@@ -1,0 +1,208 @@
+*{
+    box-sizing:border-box;
+}
+
+.dashboard{
+    min-height:100vh;
+    background:#09090B;
+    color:white;
+    padding:40px;
+    font-family:Poppins,sans-serif;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.topbar h1{
+    font-size:34px;
+    font-weight:700;
+}
+
+.topbar button{
+    background:#7C3AED;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.topbar button:hover{
+    background:#6D28D9;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.card{
+    background:#18181B;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#7C3AED;
+}
+
+.card h3{
+    color:#9CA3AF;
+    margin-bottom:12px;
+}
+
+.card h2{
+    font-size:34px;
+    color:white;
+}
+
+.uploadBox{
+    background:#18181B;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    margin-bottom:30px;
+}
+
+.uploadArea{
+    display:block;
+    cursor:pointer;
+}
+
+.uploadContent{
+    border:2px dashed #6366F1;
+    border-radius:18px;
+    padding:45px;
+    text-align:center;
+    background:#111827;
+    transition:.3s;
+}
+
+.uploadContent:hover{
+    border-color:#22D3EE;
+    background:#151c2e;
+}
+
+.uploadContent h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.uploadContent h3{
+    margin-bottom:10px;
+}
+
+.uploadContent p{
+    color:#A1A1AA;
+}
+
+.filename{
+    color:#4ADE80 !important;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.analyzeBtn{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#7C3AED,#2563EB);
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.analyzeBtn:hover{
+    transform:translateY(-2px);
+}
+
+.loadingBox{
+    background:#18181B;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.loadingBox h3{
+    margin:15px 0;
+    color:#22D3EE;
+}
+
+.resultBox{
+    background:#18181B;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.resultHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.downloadBtn{
+    background:#10B981;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.downloadBtn:hover{
+    background:#059669;
+}
+
+.resultBox pre{
+    white-space:pre-wrap;
+    line-height:1.8;
+    color:#E5E7EB;
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
+    overflow:auto;
+}
+
+@media(max-width:900px){
+
+.dashboard{
+    padding:20px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.topbar{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+.resultHeader{
+    flex-direction:column;
+    gap:20px;
+}
+
+.uploadContent{
+    padding:30px;
+}
+
+}
